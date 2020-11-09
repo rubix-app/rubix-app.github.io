@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en" dir="ltr">
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Rubix | Rubik's Cube Solver</title>
+  <meta name="description" content="Rubix | Rubik's Cube Solver" />
+  <meta name="keywords" content="Rubix Solver rubixsolver.com Solves Rubik's Cubes Rubik's Cube Solver Solve My Cube solvemycube Solve My Rubik's Cube Rubik's Cube Solver Magic Cube Magic Square 魔術方塊 魔术方块"/>
+  <meta name="robots" content="index, follow" />
+  <link rel="stylesheet" href="css/foundation.min.css">
+  <link rel="stylesheet" href="css/app.min.css">
+  <link rel="shortcut icon" href="./img/favicon.png" type="image/x-icon" />
+</head>
+<body>
+  <div id="wrapper">
+    <header>
+      <h2 id="title">Welcome to Rubix!</h2>
+      <h4 id="heading">Rubix evolves Rubik&rsquo;s Cube solutions.</h4>
+    </header>
+
+    <div id="app">
+      <p id="instructions">It iterates on a
+        <a href="http://goo.gl/SPmfDv" target="_blank">published</a>
+        evolutionary Thistlethwaite algorithm to solve in 3.8 seconds versus 340
+        without sacrificing on solution length (Safari 9 average).
+        Improvements include expanded phases, shared data among individual cubes
+        and a new geometric selection method.
+      </p>
+      <span id="action"></span>
+      <span id="next"></span>
+      <p id="page1_logo">
+        <img src="./img/logo.gif" alt="Rubix">
+        <a href="http://goo.gl/zkg4N7" target="_blank">Image</a>
+        <a href="http://goo.gl/syjfr3" target="_blank">Sources</a>
+      </p>
+      <p id="page1_page4_next">
+        <span class="show-for-large">Click</span>
+        <span class="hide-for-large">Tap</span> Next to solve your cube in 3 easy steps.
+        <br><br><input type="button" class="success button" id="begin_button" value="Next"/>
+      </p>
+    </div>
+  </div>
+
+  <footer>
+    <div id="footer_content">
+      <p>
+        Created with &#9825; by Rubix<br>
+        <span class="show-for-medium">Found a bug or have a comment?</span>
+        <span class="hide-for-medium">Comments<span id="suggestions"> or suggestions</span>?</span>
+        <a href="mailto:jason.a.mahr@gmail.com?subject=Rubix">Send a message!</a>
+      </p>
+    </div>
+  </footer>
+
+  <script src="js/jquery.min.js"></script>
+  <script src="js/what-input.min.js"></script>
+  <script src="js/foundation.min.js"></script>
+  <script src="js/app.min.js"></script>
+</body>
+</html>

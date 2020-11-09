@@ -1,0 +1,251 @@
+/* *****************************************************************************
+GENERAL
+***************************************************************************** */
+* {
+  outline: none;
+  margin: 0;
+}
+
+html, body {
+  background-color: #ebebeb;
+  background-image: url("../img/bkgd.png");
+  height: 100%;
+  font-size: 16px;
+}
+
+
+/* *****************************************************************************
+PAGE STRUCTURE
+***************************************************************************** */
+#wrapper {
+  min-height: 100%;
+  height: auto !important;
+  height: 100%;
+  max-width: 548px;
+  margin: 0 auto -5rem;
+}
+
+header {
+  background: #e0e0e0;
+  background-image: url("../img/hf-bkgd.png");
+  width: 100%;
+  padding: 10px;
+}
+
+#app {
+  padding: 15px 10px;
+}
+
+#wrapper:after {
+  content: "";
+  display: block;
+}
+
+footer, #wrapper:after {
+  height: 5rem;
+  padding: 0 0.9375rem;
+}
+
+#footer_content {
+  background: #e0e0e0;
+  background-image: url("../img/hf-bkgd.png");
+  max-width: 548px;
+  margin: auto;
+  padding: 1rem 10px 0.875rem;
+}
+
+#footer_content > p {
+  margin: 0;
+}
+
+
+/* *****************************************************************************
+LOGO & NEXT
+***************************************************************************** */
+#page1_logo {
+  text-align: right;
+  font-size: 9px;
+}
+
+#page1_logo img {
+  display: block;
+  margin: auto;
+  height: 190px;
+  width: 190px;
+}
+
+#page1_logo a {
+  color: #999;
+}
+
+#page1_page4_next {
+   display: inline;
+}
+
+
+/* *****************************************************************************
+CUBE
+***************************************************************************** */
+table {
+  border-collapse: separate;
+  border-spacing: 2px;
+}
+
+td, th {
+  padding: 0;
+}
+
+.r { background-color: #f7cac9; }
+.p { background-color: #f7786b; }
+.s { background-color: #91a8d0; }
+.b { background-color: #034f84; }
+.c { background-color: #fae03c; }
+.t { background-color: #98ddde; }
+.l { background-color: #9896a4; }
+.f { background-color: #dd4132; }
+.i { background-color: #b18f6a; }
+.g { background-color: #79c753; }
+
+.r, .p, .s, .b, .c, .t, .l, .f, .i, .g {
+  border: solid 2px white;
+  text-align: center;
+  overflow: hidden;
+  height: 38px;
+  width: 38px;
+  color: #333;
+}
+
+.r:hover, .p:hover, .s:hover, .b:hover, .c:hover,
+.t:hover, .l:hover, .f:hover, .i:hover, .g:hover {
+  cursor: default;
+}
+
+.inputting:hover {
+  cursor: pointer;
+  cursor: hand;
+}
+
+.inputtingSelectedColorr:hover { border: solid 2px #f7cac9; }
+.inputtingSelectedColorp:hover { border: solid 2px #f7786b; }
+.inputtingSelectedColors:hover { border: solid 2px #91a8d0; }
+.inputtingSelectedColorb:hover { border: solid 2px #034f84; }
+.inputtingSelectedColorc:hover { border: solid 2px #fae03c; }
+.inputtingSelectedColort:hover { border: solid 2px #98ddde; }
+.inputtingSelectedColorl:hover { border: solid 2px #9896a4; }
+.inputtingSelectedColorf:hover { border: solid 2px #dd4132; }
+.inputtingSelectedColori:hover { border: solid 2px #b18f6a; }
+.inputtingSelectedColorg:hover { border: solid 2px #79c753; }
+
+.center {
+  font-weight: 900;
+  color: black;
+}
+
+.inputting_center:hover {
+  border: none;
+  cursor: not-allowed;
+}
+
+.centered_t {
+  margin: 0 auto;
+}
+
+.panel_item {
+  cursor: default;
+  padding: 0;
+  vertical-align: middle;
+  text-align: center;
+}
+
+#panel_colors_item {
+  vertical-align: top;
+}
+
+#panel_color_id_0, #panel_color_id_1, #panel_color_id_2,
+#panel_color_id_3, #panel_color_id_4, #panel_color_id_5 {
+  height: 32px;
+  width: 32px;
+}
+
+#panel_color_id_0:hover, #panel_color_id_1:hover, #panel_color_id_2:hover,
+#panel_color_id_3:hover, #panel_color_id_4:hover, #panel_color_id_5:hover {
+  border: none;
+}
+
+.selected_side {
+  border: none;
+  font-weight: bold;
+}
+
+.selected_side:hover {
+  cursor: default;
+}
+
+#panel_side_txt {
+  width: 152px;
+}
+
+.button.tiny {
+  font-size: 0.6rem;
+  width: 62px;
+  height: 38px;
+}
+
+
+/* *****************************************************************************
+SOLVED CUBE PAGE
+***************************************************************************** */
+#solution_table {
+  width: 100%;
+}
+
+#solution_moves, #notation_diagram {
+  border: solid 2px white;
+  cursor: crosshair;
+}
+
+.move {
+  color: white;
+}
+
+.move:hover {
+  color: black;
+}
+
+#notation_diagram {
+  text-align: center;
+  overflow: hidden;
+  height: 89px;
+  width: 89px;
+  color: white;
+}
+
+#notation_diagram img {
+  height: 85px;
+  width: 85px;
+}
+
+#notation_source {
+  text-align: center;
+  font-size: 9px;
+}
+
+#notation_source a {
+  color: #aaa;
+}
+
+
+/* *****************************************************************************
+MEDIA QUERIES
+***************************************************************************** */
+@media (max-width: 317px) {
+  #suggestions {
+    display: none;
+  }
+}
+
+@media (max-width: 639px) {
+  #title {
+    font-weight: bold;
+  }
+}
